@@ -1,0 +1,138 @@
+# WordPress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# All plugins
+wp-content/plugins
+# wp-content/plugins/*
+
+# Custom plugins only 
+#!/wp-content/plugins/my-custom-plugin/
+
+# Plugin config files
+# !wp-content/plugins/.htaccess
+
+# All themes
+#
+# Note: If you wish to whitelist themes,
+# uncomment the next line
+#/wp-content/themes
+
+# WordPress specific files
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/ai1wm-backups/
+wp-content/aiowps_backups/
+wp-content/wphb-logs/
+
+# Backup files
+*.bak
+*.swp
+*.zip
+*.tar.gz
+*.tar
+*.gz
+*.rar
+*.7z
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.settings/
+.project
+.buildpath
+
+# Node modules and build files
+node_modules/
+build/
+dist/
+assets/dist/
+.grunt/
+.npm/
+.yarn/
+yarn-error.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/
+composer.lock
+
+# Cache and temporary files
+*.tmp
+*.temp
+.sass-cache/
+.cache/
+.phpunit.result.cache
+
+# Database files
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# WordPress specific temp files
+wp-content/object-cache.php
+wp-content/db.php
+wp-content/debug.log
+wp-content/fatal-error-handler.php
+
+# Plugin specific
+wp-content/plugins/*/node_modules/
+wp-content/plugins/*/vendor/
+wp-content/themes/*/node_modules/
+wp-content/themes/*/vendor/
+
+# Sitemap
+sitemap.xml
+sitemap.xml.gz
