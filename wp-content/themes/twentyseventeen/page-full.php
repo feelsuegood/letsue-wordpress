@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -24,7 +25,8 @@ get_header(); ?>
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+			<a class="button" href="<?php echo esc_url(home_url('/features')) ?>"
+				style="display: block; margin-bottom: 100px;">Features</a>
 			<?php
 			while (have_posts()):
 				the_post();
@@ -32,10 +34,10 @@ get_header(); ?>
 				get_template_part('template-parts/page/content', 'page');
 
 				// If comments are open or we have at least one comment, load up the comment template.
-				/* if (comments_open() || get_comments_number()):
-											comments_template();
-										endif; */
-
+				// if (comments_open() || get_comments_number()):
+				// 	comments_template();
+				// endif;
+			
 			endwhile; // End the loop.
 			?>
 
